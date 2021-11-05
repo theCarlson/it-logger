@@ -9,9 +9,9 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-      case GET_LOGS: 
+    case GET_LOGS:
       return {
-        ...state, 
+        ...state,
         logs: action.payload,
         loading: false,
       };
